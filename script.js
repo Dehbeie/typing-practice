@@ -97,6 +97,7 @@ function updateDisplay(inputValue) {
                 char.classList.add('correct')
             } else {
                 char.classList.add('incorrect');
+                errors++;
             }
         } else if (index === inputValue.length && index < currentText.length) {
             char.classList.add('current');
